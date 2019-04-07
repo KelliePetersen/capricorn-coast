@@ -350,12 +350,13 @@ template {
 }
 
 :root {
-  --black: #000;
+  --black: #434343;
+  --yellow: #EEE2A7;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #333;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  color: var(--black);
 }
 
 img {
@@ -424,4 +425,296 @@ img {
     width: 36.75px;
     height: 44px;
     background-position: 0 97.91111111111111%;
+  }
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  background-color: cornflowerblue;
+  background-image: url(/src/img/greatkeppel.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav__background {
+    display: none;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 70px;
+    background-color: var(--black);
+    z-index: 3;
+  }
+
+@media (min-width: 1280px) {
+
+.nav__background {
+      display: block
+  }
+  }
+
+.nav__button {
+    cursor: pointer;
+    position: fixed;
+    top: 3%;
+    right: 5%;
+    z-index: 6;
+    width: 50px;
+    height: 30px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    transition: .5s;
+  }
+
+@media (min-width: 1280px) {
+
+.nav__button {
+      display: none
+  }
+  }
+
+.nav__button:hover > .nav__line {
+    background-color: var(--yellow);
+  }
+
+.nav__line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #FCFCFC;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+    -webkit-transform-origin: left center;
+            transform-origin: left center;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    transition: .3s;
+  }
+
+.nav__line:nth-child(1) {
+    top: 0px;
+  }
+
+.nav__line:nth-child(2) {
+    top: 15px;
+  }
+
+.nav__line:nth-child(3) {
+    top: 30px;
+  }
+
+.nav__button.open .nav__line:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: -3px;
+    left: 5px;
+  }
+
+.nav__button.open .nav__line:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+
+.nav__button.open .nav__line:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 32px;
+    left: 5px;
+  }
+
+.nav__home {
+    height: 35px;
+    margin: 20px auto;
+  }
+
+@media (min-width: 1280px) {
+
+.nav__home {
+      visibility: visible;
+      margin: 0;
+      position: absolute;
+      top: 15px;
+      left: 20px
+  }
+  }
+
+.nav__home-link {
+    visibility: hidden;
+  }
+
+@media (min-width: 1280px) {
+
+.nav__home-link {
+      visibility: visible
+  }
+  }
+
+.nav__list {
+    opacity: 0;
+    transition: .3s opacity;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 5;
+    padding: 40px 0;
+    background-color: var(--black);
+    text-align: center;
+    width: 300px;
+  }
+
+@media (min-width: 720px) {
+
+.nav__list {
+      -webkit-transform: none;
+              transform: none;
+      top: 0;
+      left: calc(100% - 320px)
+  }
+  }
+
+@media (min-width: 1280px) {
+
+.nav__list {
+      background-color: transparent;
+      opacity: 1;
+      margin: 0;
+      padding: 25px 20px;
+      top: 0;
+      left: 0;
+      -webkit-transform: none;
+              transform: none;
+      width: 100%;
+      text-align: right
+  }
+  }
+
+.nav__list--visible {
+    opacity: 1;
+  }
+
+.nav__section {
+    display: block;
+    padding: 20px 60px;
+  }
+
+@media (min-width: 1280px) {
+
+.nav__section {
+      display: inline;
+      padding: 25px
+  }
+  }
+
+.nav__link {
+    visibility: hidden;
+    text-decoration: none;
+    color: #DDD;
+    font-weight: 400;
+  }
+
+.nav__link:hover {
+      color: var(--yellow);
+    }
+
+@media (min-width: 1280px) {
+
+.nav__link {
+      visibility: visible
+  }
+  }
+
+.nav__link--visible {
+    visibility: visible;
+  }
+
+.nav__active-link {
+    color: var(--yellow);
+  }
+
+.nav__arrow {
+    display: none;
+  }
+
+@media (min-height: 900px) and (min-width: 1280px) {
+
+.nav__arrow {
+      display: block;
+      z-index: 1;
+      width: 80px;
+      height: 80px;
+      border: 2px solid white;
+      border-radius: 50px;
+      position: absolute;
+      bottom: 25px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%)
+  }
+  }
+
+.nav__arrow:hover {
+      border-color: var(--yellow);
+    }
+
+.nav__arrow:hover > .nav__arrow-part {
+      background-color: var(--yellow);
+    }
+
+.nav__arrow-part {
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    position: absolute;
+    top: 40px;
+    background-color: #D8D8D8;
+  }
+
+.nav__arrow-left {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    left: 12px;
+  }
+
+.nav__arrow-right {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    left: 32px;
+  }
+
+.nav__back-to-top {
+    position: fixed;
+    bottom: 3%;
+    right: 5%;
+    background-color: var(--black);
+    z-index: 6;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    padding-top: 8px;
+  }
+
+.nav__back-to-top:hover {
+      background-color: var(--yellow);
+    }
+
+@media (min-width: 1280px) {
+
+.nav__back-to-top {
+      display: none
+  }
+  }
+
+.nav__back-to-top--hidden {
+    display: none;
   }

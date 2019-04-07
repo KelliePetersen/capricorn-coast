@@ -1,5 +1,5 @@
 import BackToTop from './modules/BackToTop';
+import MobileMenu from './modules/MobileMenu';
 
 const backToTop = new BackToTop();
-
-alert ('Webpack is functioning properly. Remove this alert in src/js/index.js');
+const mobileMenu = new MobileMenu();

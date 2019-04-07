@@ -4,3 +4,5 @@
 @import "base/_mixins";
 @import "modules/_social-icons";
 @import "modules/_sprite";
+@import "modules/_hero";
+@import "modules/_nav";

@@ -16,10 +16,37 @@
 </head>
 
 <body>
-  
-  <h1>Page successfully loaded.</h1>
-  <p>Edit <strong>index.html</strong>, <strong>styles.css</strong> and <strong>index.js</strong> to make sure that gulp's watch task is functioning correctly.</p>
-  <p>You should see icons in the grey boxes. Try running <strong>gulp sprite</strong> if the boxes are empty.</p>
+
+  <div class="nav__button">
+    <div class="nav__line"></div>
+    <div class="nav__line"></div>
+    <div class="nav__line"></div>
+  </div>
+  <nav class="nav">
+    <div class="nav__background"></div>
+    <ul class="nav__list">
+      <a href="#home" class="nav__home-link"><img src="src/img/home.png" alt="home icon" class="nav__home"></a>
+      <li class="nav__section"><a id="beaches-link" class="nav__link" href="#beaches">BEACHES</a></li>
+      <li class="nav__section"><a id="food-link" class="nav__link" href="#food">FOOD</a></li>
+      <li class="nav__section"><a id="shopping-link" class="nav__link" href="#shopping">SHOPPING</a></li>
+      <li class="nav__section"><a id="art-link" class="nav__link" href="#art">ART</a></li>
+      <li class="nav__section"><a id="culture-link" class="nav__link" href="#culture">CULTURE</a></li>
+      <li class="nav__section"><a id="wildlife-link" class="nav__link" href="#wildlife">WILDLIFE</a></li>
+      <li class="nav__section"><a id="explore-link" class="nav__link" href="#explore">EXPLORE</a></li>
+    </ul>
+  </nav>
+  <a class="nav__back-to-top nav__back-to-top--hidden" href=#home>&uarr;</a>
+
+  <div class="hero" id="home">
+
+
+    <a href="#intro">
+      <div class="nav__arrow">
+        <div class="nav__arrow-part nav__arrow-left"></div>
+        <div class="nav__arrow-part nav__arrow-right"></div>
+      </div>
+    </a>
+  </div>
 
   <div class="social-icons">
     <a href="" class="social-icons__icon"><span class="icon icon--facebook"></span></a>

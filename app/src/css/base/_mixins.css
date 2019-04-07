@@ -1,17 +1,23 @@
 @define-mixin atSmall {
-  @media (min-width: 500px) {
+  @media (min-width: 350px) {
     @mixin-content;
   }
 }
 
 @define-mixin atMedium {
-  @media (min-width: 800px) {
+  @media (min-width: 720px) {
     @mixin-content;
   }
 }
 
 @define-mixin atLarge {
-  @media (min-width: 1000px) {
+  @media (min-width: 1280px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atFullscreen {
+  @media (min-height: 900px) and (min-width: 1280px) {
     @mixin-content;
   }
 }
