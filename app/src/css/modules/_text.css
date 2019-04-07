@@ -1,7 +1,9 @@
 .text {
 
   &__heading {
+    position: relative;
     font-weight: 600;
+    margin-bottom: 10px;
   }
 
   &__subheading {
@@ -13,6 +15,15 @@
     max-width: 300px;
     line-height: 24px;
     margin: 20px auto 10px auto;
+  }
+
+  &__shadow {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.1;
+    font-size: 65px;
   }
 
   &--white {

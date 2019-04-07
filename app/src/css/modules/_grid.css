@@ -1,0 +1,66 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @mixin atLarge {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__item {
+    position: relative;
+    height: 33vw;
+    overflow: hidden;
+
+    @mixin atLarge {
+      &:hover > .grid__border, &:hover > .grid__textbox {
+        visibility: visible;
+      }
+    }
+  }
+
+  &__textbox {
+    visibility: hidden;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20%;
+    color: white;
+    border: 2px solid white;
+    background-color: rgba(60, 60, 60, 0.5);
+    width: 70%;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 10px 0 5px 0;
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color: var(--yellow);
+    }
+  }
+
+  &__border {
+    visibility: hidden;
+    position: absolute;
+    margin: 0 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 94%;
+    height: 94%;
+    border: 2px solid white;
+    background-color: rgba(0,0,0,0);
+    
+  }
+
+  &__image {
+    display: block;  
+  }
+}

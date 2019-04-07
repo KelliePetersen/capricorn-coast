@@ -6,6 +6,8 @@
 @import "modules/_sprite";
 @import "modules/_text";
 @import "modules/_nav";
+@import "modules/_grid";
 @import "modules/_hero";
 @import "sections/_intro";
 @import "sections/_beaches";
+@import "sections/_food";
