@@ -3,7 +3,6 @@ class MobileMenu {
     this.menu = document.getElementsByClassName('nav__list');
     this.menuIcon = document.getElementsByClassName('nav__button');
     this.listItem = document.getElementsByClassName('nav__link');
-    this.home = document.getElementsByClassName('nav__home-link');
     this.events();
   }
   events() {
@@ -12,7 +11,6 @@ class MobileMenu {
   }
   toggleMenu() {
     this.menu[0].classList.toggle("nav__list--visible");
-    this.home[0].classList.toggle("nav__link--visible");
     Array.from(this.listItem).forEach(function (item) {
       item.classList.toggle("nav__link--visible");
     })

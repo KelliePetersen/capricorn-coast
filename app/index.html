@@ -24,8 +24,8 @@
   </div>
   <nav class="nav">
     <div class="nav__background"></div>
+    <a href="#home" class="nav__home-link"><img src="src/img/logo-thick.png" alt="home icon" class="nav__home"></a>
     <ul class="nav__list">
-      <a href="#home" class="nav__home-link"><img src="src/img/home.png" alt="home icon" class="nav__home"></a>
       <li class="nav__section"><a id="beaches-link" class="nav__link" href="#beaches">BEACHES</a></li>
       <li class="nav__section"><a id="food-link" class="nav__link" href="#food">FOOD</a></li>
       <li class="nav__section"><a id="shopping-link" class="nav__link" href="#shopping">SHOPPING</a></li>
@@ -38,8 +38,9 @@
   <a class="nav__back-to-top nav__back-to-top--hidden" href=#home>&uarr;</a>
 
   <div class="hero" id="home">
-
-
+    <h1 class="hero__heading">THE CAPRICORN COAST</h1>
+    <h2 class="hero__subheading">Queensland, Australia</h2>
+    <a class="hero__link nav__external-link href="#">GET A ROOM</a>
     <a href="#intro">
       <div class="nav__arrow">
         <div class="nav__arrow-part nav__arrow-left"></div>
@@ -48,12 +49,41 @@
     </a>
   </div>
 
-  <div class="social-icons">
+  <section class="intro section" id="intro">
+    <h2 class="intro__text">Exciting.</h2>
+    <h2 class="intro__text">Diverse.</h2>
+    <h2 class="intro__text">Breathtakingly beautiful.</h2>
+    <img class="intro__image" 
+         srcset="src/img/intro-375.jpg 375w,
+                 src/img/intro.jpg 530w" 
+         sizes="(max-width: 499px) 375px,
+                (min-width: 500px) 530px"
+         src="src/img/intro.jpg"
+         alt="An aerial photo of a beautiful beach">
+  </section>
+
+  <section class="beaches section" id="beaches">
+    <h1 class="text__heading text--white text--center">BEACHES</h1>
+    <p class="text__subheading text--white">Surf. Snorkel. Serenity.</p>
+    <p class="text__paragraph text--white">The Capricorn Coast is renowned for its <strong>75 kilometres</strong> of beaches and the various islands out on the bay. With only a few
+    small towns nearby, you can easily find a beach all for yourself.</p>
+    <p class="text__paragraph text--white">Thanks to its location, it is blessed with idyllic tropical weather all year round. It's always a good day to visit the
+    beach.</p>
+    <img class="beaches__image" 
+         srcset="src/img/beaches-375.jpg 375w,
+                 src/img/beaches.jpg 530w" 
+         sizes="(max-width: 499px) 375px,
+                (min-width: 500px) 530px"
+         src="src/img/beaches.jpg"
+         alt="A photo of a man surfing on a crystal blue wave">
+  </section>
+
+  <!-- <div class="social-icons">
     <a href="" class="social-icons__icon"><span class="icon icon--facebook"></span></a>
     <a href="" class="social-icons__icon"><span class="icon icon--twitter"></span></a>
     <a href="" class="social-icons__icon"><span class="icon icon--instagram"></span></a>
     <a href="" class="social-icons__icon"><span class="icon icon--youtube"></span></a>
-  </div>
+  </div> -->
   
 </body>
 <!-- build:js src/js/index.js -->

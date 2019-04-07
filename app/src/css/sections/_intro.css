@@ -1,0 +1,18 @@
+.intro {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+  &__text {
+    font-weight: 200;
+    font-size: 38px;
+    margin: 15px;
+  }
+
+  &__image {
+    box-shadow: -15px 15px var(--black);
+    width: calc(85% - 15px);
+    margin: 30px auto;
+    margin-left: 15px;
+  }
+}

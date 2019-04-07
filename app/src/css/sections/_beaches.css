@@ -1,0 +1,12 @@
+.beaches {
+  background-color: var(--black);
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+  &__image {
+    box-shadow: 15px 15px rgba(255,255,255,0.2);
+    width: calc(85% - 15px);
+    margin: 30px auto;
+    margin-left: 30px;
+  }
+}
