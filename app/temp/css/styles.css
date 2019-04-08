@@ -1086,8 +1086,31 @@ img {
     background-color: var(--yellow);
     width: 100%;
     height: 2px;
-    margin-bottom: 20px;
   }
+
+.footer__nav-list {
+    list-style-type: none;
+    padding-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-auto-flow: column;
+    grid-column-gap: 20px;
+    grid-row-gap: 15px;
+    width: 180px;
+    text-align: left;
+    margin: 25px auto 40px auto;
+  }
+
+.footer__link {
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+  }
+
+.footer__link:hover {
+      color: var(--yellow);
+    }
 
 .footer__copyright {
     font-size: 12px;
