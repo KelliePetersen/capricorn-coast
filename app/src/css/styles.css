@@ -11,3 +11,9 @@
 @import "sections/_intro";
 @import "sections/_beaches";
 @import "sections/_food";
+@import "sections/_shopping";
+@import "sections/_art";
+@import "sections/_culture";
+@import "sections/_wildlife";
+@import "sections/_explore";
+@import "modules/_footer";

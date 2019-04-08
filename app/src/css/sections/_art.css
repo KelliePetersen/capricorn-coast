@@ -1,0 +1,24 @@
+.art {
+  background-color: var(--orange);
+  padding-top: 30px;
+
+  &__shadow {
+    left: 8%;
+  }
+
+  &__line {
+    background-color: var(--black);
+    width: 90%;
+    height: 8px;
+    margin-bottom: 40px;
+    margin-left: 10%;
+  }
+
+  &__image {
+    margin: 40px auto 0 auto;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}

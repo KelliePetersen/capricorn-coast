@@ -1,0 +1,22 @@
+.culture {
+  background-color: var(--black);
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+  &__line {
+    background-color: white;
+    width: 68%;
+    height: 8px;
+  }
+
+  &__image {
+    box-shadow: 15px 15px rgba(255,255,255,0.1);
+    width: calc(85% - 15px);
+    margin: 30px auto;
+    margin-left: 30px;
+
+    @mixin atMedium {
+      box-shadow: 15px 15px rgba(255,255,255,0.2);
+    }
+  }
+}

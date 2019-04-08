@@ -1,0 +1,13 @@
+.explore {
+  background-image: url(/src/img/blacktexture.png);
+  background-repeat: repeat;
+  padding-top: 30px;
+  padding-bottom: 50px;
+
+  &__line {
+    background-color: white;
+    margin: 0 auto 50px auto;
+    width: 100%;
+    height: 8px;
+  }
+}

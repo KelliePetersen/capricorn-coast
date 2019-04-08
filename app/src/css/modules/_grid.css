@@ -1,6 +1,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
 
   @mixin atLarge {
     grid-template-columns: repeat(3, 1fr);
@@ -8,8 +9,6 @@
 
   &__item {
     position: relative;
-    height: 33vw;
-    overflow: hidden;
 
     @mixin atLarge {
       &:hover > .grid__border, &:hover > .grid__textbox {
@@ -61,6 +60,15 @@
   }
 
   &__image {
-    display: block;  
+    display: block;
+    width: 100%;
+  }
+
+  &--selected {
+    grid-column: span 2;
+  }
+
+  &--visible {
+    visibility: visible;
   }
 }

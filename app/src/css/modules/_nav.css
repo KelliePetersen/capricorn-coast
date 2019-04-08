@@ -101,13 +101,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 5;
+    z-index: -5;
     padding: 40px 0;
     background-color: var(--black);
     text-align: center;
     width: 300px;
 
     @mixin atMedium {
+      z-index: 5;
       transform: none;
       top: 0;
       left: calc(100% - 320px);
@@ -127,6 +128,7 @@
   }
 
   &__list--visible {
+    z-index: 5;
     opacity: 1;
   }
 
