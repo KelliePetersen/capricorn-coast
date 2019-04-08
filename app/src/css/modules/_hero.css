@@ -4,30 +4,66 @@
   height: 100vh;
   min-height: 500px;
   background-color: cornflowerblue;
-  background-image: url(/src/img/hero-mobile.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   color: white;
   text-shadow: 0px 3px 6px rgba(0,0,0,0.5);
   text-align: center;
 
+  &__image {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
   &__heading {
-    font-size: 40px;
+    font-size: 10vw;
     font-weight: 400;
-    margin: 0;
-    padding-top: 45%;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    @mixin atMedium {
+      font-size: 94px;
+    }
   }
 
   &__subheading {
     font-size: 20px;
     font-weight: 400;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    @mixin atMedium {
+      font-size: 30px;
+    }
+  }
+
+  &__quote {
+    display: none;
+    position: absolute;
+    bottom: 34%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 36px;
+    font-weight: 400;
+    font-style: italic;
+    width: 100%;
+    @mixin atMedium {
+      display: block;
+    }
   }
 
   &__link {
+    background-color: rgba(60, 60, 60, 0.5);
     position: absolute;
     bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
+    margin: 0 auto;
+    @mixin atMedium {
+      bottom: 25%;
+    }
   }
 }

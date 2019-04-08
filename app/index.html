@@ -38,8 +38,17 @@
   <a class="nav__back-to-top nav__back-to-top--hidden" href=#home>&uarr;</a>
 
   <div class="hero" id="home">
-    <h1 class="hero__heading">THE CAPRICORN COAST</h1>
-    <h2 class="hero__subheading">Queensland, Australia</h2>
+    <img class="hero__image" 
+         srcset="src/img/hero-mobile.jpg 718w,
+                 src/img/hero-tablet.jpg 1280w,
+                 src/img/hero.jpeg 2048w" 
+         sizes="(max-width: 719px) 718px,
+                (min-width: 720px) and (max-width: 1279px) 1280px,
+                (min-width: 1280px) 2048px"
+         src="src/img/hero.jpeg"
+         alt="An aerial photo of the Keppel Islands">
+    <h1 class="hero__heading">THE CAPRICORN COAST<span class="hero__subheading">Queensland, Australia</span></h1>
+    <p class="hero__quote">Enjoy the quiet life along the seaside</p>
     <a class="hero__link nav__external-link href="#">GET A ROOM</a>
     <a href="#intro">
       <div class="nav__arrow">
@@ -50,14 +59,17 @@
   </div>
 
   <section class="intro section" id="intro">
-    <h2 class="intro__text">Exciting.</h2>
-    <h2 class="intro__text">Diverse.</h2>
-    <h2 class="intro__text">Breathtakingly beautiful.</h2>
+    <div class="intro__textbox">
+      <h2 class="intro__text">Exciting.</h2>
+      <h2 class="intro__text">Diverse.</h2>
+      <h2 class="intro__text">Breathtakingly beautiful.</h2>
+      <a class="intro__link nav__external-link href=" #">BOOK YOUR STAY --></a>
+    </div>
     <img class="intro__image" 
          srcset="src/img/intro-375.jpg 375w,
-                 src/img/intro.jpg 530w" 
-         sizes="(max-width: 499px) 375px,
-                (min-width: 500px) 530px"
+                 src/img/intro.jpg 665w" 
+         sizes="(max-width: 449px) 375px,
+                (min-width: 450px) 665px"
          src="src/img/intro.jpg"
          alt="An aerial photo of a beautiful beach">
   </section>

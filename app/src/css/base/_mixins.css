@@ -17,7 +17,7 @@
 }
 
 @define-mixin atFullscreen {
-  @media (min-height: 900px) and (min-width: 1280px) {
+  @media (min-height: 900px) and (min-width: 720px) {
     @mixin-content;
   }
 }
