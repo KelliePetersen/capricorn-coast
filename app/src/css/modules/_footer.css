@@ -80,7 +80,7 @@
 
   &__back-to-top {
     display: none;
-    @mixin atMedium {
+    @mixin atLarge {
       display: block;
       position: absolute;
       bottom: 40px;
