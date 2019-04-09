@@ -35,11 +35,7 @@
   }
 
   &__link {
-    display: none;
-    @mixin atMedium {
-      display: block;
       margin: 60px auto 60px 7.5%;
-    }
   }
 
   &__image {
@@ -48,10 +44,12 @@
     max-width: 570px;
     margin: 30px auto;
     margin-left: 7.5%;
+
     @mixin atMedium {
       margin-left: calc(48% - 285px);
       box-shadow: 25px 25px rgba(255,255,255,0.1);
     }
+    
     @mixin atLarge {
       margin: auto;
       margin-left: 0;

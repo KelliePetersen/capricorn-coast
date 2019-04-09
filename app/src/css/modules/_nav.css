@@ -238,14 +238,19 @@
   }
 
   &__external-link {
+    display: none;
+    text-decoration: none;
     cursor: pointer;
-    display: block;
     font-size: 20px;
     font-weight: 500;
     border: 3px solid white;
     padding: 12px 0 14px 0;
     width: 265px;
     text-align: center;
+
+    @mixin atMedium {
+      display: block;
+    }
 
     &:hover {
       color: var(--yellow);

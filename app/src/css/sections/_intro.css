@@ -43,6 +43,7 @@
       display: block;
       margin-top: 40px;
       border-color: var(--black);
+      color: var(--black);
     }
   }
 

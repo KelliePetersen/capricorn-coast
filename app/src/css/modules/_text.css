@@ -32,12 +32,13 @@
 
   &__shadow {
     position: absolute;
-    bottom: -30px;
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0.1;
     font-size: calc(25vw - 30px);
     @mixin atMedium {
+      bottom: -30px;
       font-size: 150px;
     }
   }

@@ -2,9 +2,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   overflow: hidden;
+  margin-top: 10vw;
 
   @mixin atLarge {
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 100px;
   }
 
   &__item {

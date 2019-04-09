@@ -1,24 +1,81 @@
 .art {
-  background-color: var(--orange);
-  padding-top: 30px;
+  
+
+  &__container {
+    position: relative;
+    padding-top: 30px;
+    background-color: var(--orange);
+    @mixin atMedium {
+      margin: 50px auto 200px auto;
+      padding-bottom: 50px;
+      max-width: 900px;
+    }
+    @mixin atLarge {
+      margin: 200px auto;
+      width: 90%;
+      max-width: 1300px;
+      display: grid;
+      grid-template-columns: 40% 60%;
+    }
+  }
+
+  &__textbox {
+    grid-column: 2;
+  }
 
   &__shadow {
-    left: 8%;
+    left: 10%;
   }
 
   &__line {
     background-color: var(--black);
-    width: 90%;
+    width: 92.5%;
+    max-width: 590px;
     height: 8px;
     margin-bottom: 40px;
-    margin-left: 10%;
+    margin-left: 7.5%;
+    @mixin atMedium {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__link {
+    border-color: var(--black);
+    color: var(--black);
+    margin: 50px auto 20px 7.5%;
   }
 
   &__image {
     margin: 40px auto 0 auto;
-    height: 200px;
     width: 100%;
-    object-fit: cover;
+    max-width: 430px;
+    padding-bottom: 50px;
+  }
+
+  &__aboriginal {
+    display: none;
+    @mixin atMedium {
+      display: block;
+      margin-left: 7.5%;
+      margin-top: 100px;
+    }
+    @mixin atLarge {
+      max-width: 500px;
+      position: absolute;
+      top: -180px;
+      left: -20%;
+    }
+  }
+
+  &__millgallery {
     display: block;
+    @mixin atMedium {
+      position: absolute;
+      bottom: -140px;
+      right: 10%;
+    }
+    @mixin atLarge {
+      right: 62%;
+    }
   }
 }
