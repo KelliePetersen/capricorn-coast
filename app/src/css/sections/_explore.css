@@ -4,11 +4,23 @@
   padding-top: 30px;
   padding-bottom: 50px;
 
+  @mixin atMedium {
+    padding-top: 100px;
+  }
+
   &__line {
     background-color: white;
     margin: 0 auto 50px auto;
     width: 100%;
     max-width: 900px;
     height: 8px;
+  }
+
+  &__social-media {
+    display: none;
+    @mixin atMedium {
+      display: block;
+      margin: 100px;
+    }
   }
 }

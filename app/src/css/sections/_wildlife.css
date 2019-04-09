@@ -1,10 +1,24 @@
 .wildlife {
-  padding-top: 20px;
   padding-bottom: 60px;
   padding-top: 30px;
+  overflow: hidden;
+
+  @mixin atMedium {
+    padding: 80px 0 120px 0;
+  }
+
+  @mixin atLarge {
+    background-image: url(/src/img/wildlife.jpg), linear-gradient(to right, white, black);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
   &__shadow {
     left: 37%;
+    @mixin atMedium {
+      left: calc(250px - 10%);
+    }
   }
 
   &__line {
@@ -21,6 +35,34 @@
     width: 200px;
     margin-left: 8%;
     line-height: 36px;
+    @mixin atMedium {
+      font-size: 52px;
+      margin-top: 80px;
+      width: 500px;
+      line-height: 60px;
+    }
+  }
+
+  &__container {
+    @mixin atMedium {
+      margin-left: calc(43% - 300px);
+    }
+    @mixin atLarge {
+      margin: 0;
+    }
+  }
+
+  &__link {
+    color: var(--black);
+    border-color: var(--black);
+    margin: 70px 7.5%;
+  }
+
+  &__image-container {
+    max-width: 600px;
+    margin: auto;
+    grid-column: 1;
+    grid-row: 1;
   }
 
   &__image {
