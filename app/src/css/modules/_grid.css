@@ -11,16 +11,21 @@
 
   &__item {
     position: relative;
+    overflow: hidden;
 
     @mixin atLarge {
       &:hover > .grid__border, &:hover > .grid__textbox {
-        visibility: visible;
+        opacity: 1;
+      }
+      &:hover > .grid__image {
+        transform: scale(1.2);
       }
     }
   }
 
   &__textbox {
-    visibility: hidden;
+    z-index: 2;
+    opacity: 0;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -30,26 +35,26 @@
     background-color: rgba(60, 60, 60, 0.5);
     width: 70%;
     text-align: center;
+    transition: 1s;
   }
 
   &__text {
+    display: block;
+    color: white;
+    text-decoration: none;
     font-size: 28px;
     font-weight: 400;
-    margin: 10px 0 5px 0;
-  }
+    margin: 20px 0;
+    transition: 0.3s;
 
-  &__link {
-    display: block;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: white;
     &:hover {
-      color: var(--yellow);
+      transform: scale(1.1);
     }
   }
 
   &__border {
-    visibility: hidden;
+    z-index: 2;
+    opacity: 0;
     position: absolute;
     margin: 0 3%;
     top: 50%;
@@ -58,16 +63,15 @@
     height: 94%;
     border: 2px solid white;
     background-color: rgba(0,0,0,0);
+    transition: 1s;
     
   }
 
   &__image {
     display: block;
     width: 100%;
-  }
-
-  &--selected {
-    grid-column: span 2;
+    transition: 1s;
+    object-fit: cover;
   }
 
   &--visible {
