@@ -40,8 +40,6 @@
   }
 
   &__link {
-    border-color: var(--black);
-    color: var(--black);
     margin: 50px auto 20px 7.5%;
   }
 

@@ -1,7 +1,7 @@
 .food {
   background-image: url(/src/img/whitetexture.png);
   background-repeat: repeat;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 50px;
 
   @mixin atMedium {

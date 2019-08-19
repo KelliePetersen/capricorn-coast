@@ -8,7 +8,7 @@
   }
 
   @mixin atLarge {
-    padding: 120px 0;
+    padding: 150px 0 170px 0;
     text-align: left;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -17,6 +17,9 @@
   &__textbox {
     margin-top: 8%;
     margin-left: 30px;
+    @mixin atLarge {
+      margin-top: 60px;
+    }
   }
 
   &__text {
@@ -31,8 +34,8 @@
       line-height: 80px;
     }
     @mixin atLarge {
-      margin-left: 0;
-      line-height: 60px;
+      margin-left: 20px;
+      line-height: 70px;
       font-weight: 400;
     }
   }
@@ -42,8 +45,7 @@
     @mixin atLarge {
       display: block;
       margin-top: 40px;
-      border-color: var(--black);
-      color: var(--black);
+      margin-left: 20px;
     }
   }
 

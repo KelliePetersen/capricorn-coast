@@ -1,6 +1,6 @@
 .wildlife {
   padding-bottom: 60px;
-  padding-top: 30px;
+  padding-top: 50px;
   overflow: hidden;
 
   @mixin atMedium {
@@ -16,6 +16,7 @@
 
   &__shadow {
     left: 37%;
+    opacity: 0.1;
     @mixin atMedium {
       left: calc(250px - 10%);
     }
@@ -27,6 +28,10 @@
     height: 8px;
     margin-bottom: 40px;
     margin-left: 20%;
+    @mixin atLarge {
+      width: 100%;
+      margin-left: 7.5%;
+    }
   }
 
   &__subheading {
@@ -53,20 +58,20 @@
   }
 
   &__link {
-    color: var(--black);
-    border-color: var(--black);
     margin: 70px 7.5%;
   }
 
   &__image-container {
     max-width: 600px;
-    margin: auto;
+    margin: 50px auto;
     grid-column: 1;
     grid-row: 1;
+    @mixin atLarge {
+      margin: 100px auto;
+    }
   }
 
   &__image {
-    border: 5px solid var(--black);
     display: block;
     width: 80%;
   }

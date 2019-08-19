@@ -5,6 +5,7 @@
     font-weight: 600;
     margin-bottom: 10px;
     font-size: calc(10vw - 8px);
+    letter-spacing: 3px;
     @mixin atMedium {
       font-size: 75px;
       margin-bottom: 20px;
@@ -23,7 +24,9 @@
   &__paragraph {
     width: 85%;
     max-width: 600px;
-    line-height: 24px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 1px;
     margin: 20px auto 10px 7.5%;
     @mixin atMedium {
       font-size: 20px;
@@ -31,11 +34,13 @@
   }
 
   &__shadow {
+    user-select: none;
+    cursor: default;
     position: absolute;
     bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
-    opacity: 0.1;
+    opacity: 0.05;
     font-size: calc(25vw - 30px);
     @mixin atMedium {
       bottom: -30px;
@@ -53,5 +58,11 @@
 
   &--left {
     margin-left: 20%;
+  }
+  &--no-m {
+    margin-left: 20%;
+    @mixin atLarge {
+      margin-left: 7%;
+    }
   }
 }

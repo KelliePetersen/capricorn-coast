@@ -1,7 +1,7 @@
 .shopping {
   position: relative;
   background-color: var(--black);
-  padding-top: 30px;
+  padding-top: 50px;
   overflow: hidden;
 
   @mixin atMedium {
@@ -9,6 +9,8 @@
   }
 
   &__container {
+    position: relative;
+    z-index: 2;
     @mixin atMedium {
       margin-left: calc(43% - 270px);
     }

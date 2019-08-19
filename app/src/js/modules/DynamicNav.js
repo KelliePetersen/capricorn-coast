@@ -10,12 +10,11 @@ class DynamicNav {
   createWaypoints() {
     let mainThis = this;
     for (var i = 0; i < this.pageSections.length; i++) {
-      let currentItem = this;
-      let newItem = currentItem.pageSections[i];
+      let newItem = this.pageSections[i];
       new Waypoint({
         element: mainThis.pageSections[i],
         handler: function(direction) {
-          if (direction == 'down') {
+          if (direction == 'down' || direction == 'up') {
             let matchingLink = newItem.getAttribute('data-link');
 
             for (var j = 0; j < mainThis.links.length; j++) {
@@ -27,22 +26,6 @@ class DynamicNav {
           }
         },
         offset: '20%'
-      });
-      new Waypoint({
-        element: mainThis.pageSections[i],
-        handler: function(direction) {
-          if (direction == 'up') {
-            let matchingLink = newItem.getAttribute('data-link');
-
-            for (var j = 0; j < mainThis.links.length; j++) {
-              mainThis.links[j].classList.remove('nav__active-link');
-            }
-
-            let currentLink = document.querySelector(matchingLink);
-            currentLink.classList.add('nav__active-link');
-          }
-        },
-        offset: '-40%'
       });
     }
   }
