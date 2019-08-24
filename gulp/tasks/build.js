@@ -11,11 +11,11 @@ const gulp = require('gulp'),
 gulp.task('previewBuild', () => 
   browserSync.init({ 
     notify: false, 
-    server: { baseDir: 'dist' } 
+    server: { baseDir: 'docs' } 
   })
 );
 
-gulp.task('deleteDist', () => del('./dist'));
+gulp.task('deleteDist', () => del('./docs'));
 
 gulp.task('copyFiles', () => {
   const paths = [
@@ -25,7 +25,7 @@ gulp.task('copyFiles', () => {
     '!./app/temp/**'
   ];
   return gulp.src(paths)
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./docs'));
 });
 
 gulp.task('minifyImages', () =>
@@ -35,7 +35,7 @@ gulp.task('minifyImages', () =>
       interlaced: true,
       multipass: true
     }))
-    .pipe(gulp.dest('./dist/src/img'))
+    .pipe(gulp.dest('./docs/src/img'))
 );
 
 gulp.task('usemin', () =>
@@ -45,7 +45,7 @@ gulp.task('usemin', () =>
       html: [htmlmin({ collapseWhitespace: true })],
       js: [function() {return rev()}, function() {return uglify()}]
     }))
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('./docs'))
 );
 
 gulp.task(

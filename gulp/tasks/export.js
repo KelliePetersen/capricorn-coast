@@ -5,7 +5,7 @@ const gulp = require('gulp'),
 gulp.task('deleteZIP', () => del('./dist.zip'));
 
 gulp.task('createZIP', (done) => {
-  gulp.src('dist/**')
+  gulp.src('docs/**')
     .pipe(zip('dist.zip'))
     .pipe(gulp.dest('./'));
     done();
