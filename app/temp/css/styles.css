@@ -996,9 +996,9 @@ img {
             transform: translateX(-50%);
     margin: 0 auto;
     text-shadow: none;
-    border-color: var(--black);
-    background-color: var(--black);
-    color: white;
+    border-color: white;
+    background-color: white;
+    color: var(--black);
   }
 
 @media (min-width: 720px) {
@@ -1009,9 +1009,9 @@ img {
   }
 
 .hero__link:hover {
-      border-color: white;
-      background-color: white;
-      color: var(--black);
+      border-color: var(--black);
+      background-color: var(--black);
+      color: white;
     }
 
 .intro {
