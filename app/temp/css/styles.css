@@ -357,6 +357,7 @@ template {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -652,7 +653,8 @@ img {
       -webkit-transform: none;
               transform: none;
       top: 0;
-      left: calc(100% - 320px)
+      left: calc(100% - 320px);
+      display: block
   }
   }
 

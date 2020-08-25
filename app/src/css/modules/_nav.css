@@ -109,6 +109,7 @@
       transform: none;
       top: 0;
       left: calc(100% - 320px);
+      display: block;
     }
     
     @mixin atLarge {
