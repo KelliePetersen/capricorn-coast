@@ -869,7 +869,7 @@ img {
 
 .grid__textbox {
     z-index: 2;
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -881,22 +881,38 @@ img {
     width: 70%;
     text-align: center;
     transition: 1s;
+    text-decoration: none;
+  }
+
+.grid__textbox:hover .grid__text {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+
+@media (min-width: 1280px) {
+
+.grid__textbox {
+      opacity: 0
+  }
   }
 
 .grid__text {
     display: block;
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
     font-weight: 400;
-    margin: 20px 0;
+    margin: 10px 5px;
     transition: 0.3s;
+    font-size: 0.865rem;
   }
 
-.grid__text:hover {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1);
-    }
+@media (min-width: 720px) {
+
+.grid__text {
+      margin: 20px 0;
+      font-size: 1.25rem
+  }
+  }
 
 .grid__border {
     z-index: 2;
@@ -917,6 +933,8 @@ img {
 .grid__image {
     display: block;
     width: 100%;
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
     transition: 1s;
     -o-object-fit: cover;
        object-fit: cover;
