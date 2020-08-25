@@ -1,9 +1,12 @@
 .nav {
     height: 160px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0));
     position: absolute;
     width: 100%;
     z-index: 3;
+
+    @mixin atLarge {
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0));
+    }
 
   &__background {
     position: fixed;
@@ -99,6 +102,7 @@
     width: 300px;
     font-weight: 500;
     letter-spacing: 1px;
+    display: none;
 
     @mixin atMedium {
       z-index: 5;
@@ -131,6 +135,7 @@
   &__list--visible {
     z-index: 5;
     opacity: 1;
+    display: block;
   }
 
   &__section {

@@ -34,10 +34,13 @@
   &__subheading {
     font-family: 'Roboto';
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 400;
     letter-spacing: 1px;
     margin-top: 50px;
+    @mixin atLarge {
+      font-size: 1.5rem;
+    }
   }
 
   &__link {
