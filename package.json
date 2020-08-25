@@ -20,7 +20,7 @@
     "@babel/preset-env": "^7.2.3",
     "autoprefixer": "^9.4.4",
     "babel-loader": "^8.0.5",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.12",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-clean-css": "^4.0.0",
@@ -40,7 +40,7 @@
     "postcss-mixins": "^6.2.1",
     "postcss-nested": "^4.1.1",
     "webpack": "^4.28.4",
-    "webpack-cli": "^3.2.1"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "gulp-cli": "^2.0.1",
