@@ -30,7 +30,7 @@
     margin: 10px auto;
     line-height: calc(50px + 3vw);
     @mixin atMedium {
-      font-size: 52px;
+      font-size: 3rem;
       line-height: 80px;
     }
     @mixin atLarge {

@@ -447,20 +447,20 @@ img {
 @media (min-width: 720px) {
 
 .text__heading {
-      font-size: 75px;
+      font-size: 4rem;
       margin-bottom: 20px
   }
   }
 
 .text__subheading {
     margin-left: 7.5%;
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
 @media (min-width: 720px) {
 
 .text__subheading {
-      font-size: 32px;
+      font-size: 1.75rem;
       margin-top: 50px
   }
   }
@@ -469,16 +469,10 @@ img {
     width: 85%;
     max-width: 600px;
     line-height: 1.5;
+    font-size: 1.125rem;
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     margin: 20px auto 10px 7.5%;
-  }
-
-@media (min-width: 720px) {
-
-.text__paragraph {
-      font-size: 20px
-  }
   }
 
 .text__shadow {
@@ -500,7 +494,7 @@ img {
 
 .text__shadow {
       bottom: -30px;
-      font-size: 150px
+      font-size: 8rem
   }
   }
 
@@ -665,15 +659,13 @@ img {
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%);
       transition: all 0.5s;
-      width: 100%;
-      font-size: 1.25rem
+      width: 100%
   }
   }
 
 @media (min-width: 1280px) {
 
 .nav__list--compact {
-      font-size: 1rem;
       font-weight: 400;
       padding: 30px;
       transition: all 0.5s
@@ -782,7 +774,7 @@ img {
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
     text-align: center;
     color: white;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-decoration: none;
     padding-top: 8px;
     transition: 0.3s;
@@ -808,7 +800,7 @@ img {
     display: none;
     text-decoration: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     border: 3px solid white;
     padding: 20px 0;
@@ -895,7 +887,7 @@ img {
     display: block;
     color: white;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 1.5rem;
     font-weight: 400;
     margin: 20px 0;
     transition: 0.3s;
@@ -953,7 +945,7 @@ img {
 
 .hero__heading {
     font-family: 'Dancing Script';
-    font-size: 5em;
+    font-size: 4rem;
     font-weight: 700;
     position: absolute;
     top: 5%;
@@ -967,14 +959,14 @@ img {
 
 .hero__heading {
       top: 15%;
-      font-size: 8em
+      font-size: 6rem
   }
   }
 
 @media (min-width: 1280px) {
 
 .hero__heading {
-      font-size: 10em
+      font-size: 9rem
   }
   }
 
@@ -1061,7 +1053,7 @@ img {
 @media (min-width: 720px) {
 
 .intro__text {
-      font-size: 52px;
+      font-size: 3rem;
       line-height: 80px
   }
   }
@@ -1557,7 +1549,7 @@ img {
   }
 
 .wildlife__subheading {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     width: 200px;
     margin-left: 8%;
@@ -1567,7 +1559,7 @@ img {
 @media (min-width: 720px) {
 
 .wildlife__subheading {
-      font-size: 52px;
+      font-size: 3rem;
       margin-top: 80px;
       width: 500px;
       line-height: 60px
@@ -1699,7 +1691,7 @@ img {
 .footer__heading {
     margin-top: 0px;
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     letter-spacing: 1px;
   }
@@ -1732,8 +1724,7 @@ img {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 1fr);
       width: 80%;
-      max-width: 700px;
-      font-size: 20px
+      max-width: 700px
   }
   }
 
@@ -1748,7 +1739,7 @@ img {
     }
 
 .footer__copyright {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 200;
     margin-top: 50px;
   }

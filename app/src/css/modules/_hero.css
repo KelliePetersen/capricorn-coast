@@ -15,7 +15,7 @@
 
   &__heading {
     font-family: 'Dancing Script';
-    font-size: 5em;
+    font-size: 4rem;
     font-weight: 700;
     position: absolute;
     top: 5%;
@@ -24,10 +24,10 @@
     width: 100%;
     @mixin atMedium {
       top: 15%;
-      font-size: 8em;
+      font-size: 6rem;
     }
     @mixin atLarge {
-      font-size: 10em;
+      font-size: 9rem;
     }
   }
 

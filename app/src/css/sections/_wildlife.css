@@ -35,13 +35,13 @@
   }
 
   &__subheading {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     width: 200px;
     margin-left: 8%;
     line-height: 36px;
     @mixin atMedium {
-      font-size: 52px;
+      font-size: 3rem;
       margin-top: 80px;
       width: 500px;
       line-height: 60px;

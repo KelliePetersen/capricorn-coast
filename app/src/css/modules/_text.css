@@ -7,16 +7,16 @@
     font-size: calc(10vw - 8px);
     letter-spacing: 3px;
     @mixin atMedium {
-      font-size: 75px;
+      font-size: 4rem;
       margin-bottom: 20px;
     }
   }
 
   &__subheading {
     margin-left: 7.5%;
-    font-size: 24px;
+    font-size: 1.5rem;
     @mixin atMedium {
-      font-size: 32px;
+      font-size: 1.75rem;
       margin-top: 50px;
     }
   }
@@ -25,12 +25,10 @@
     width: 85%;
     max-width: 600px;
     line-height: 1.5;
+    font-size: 1.125rem;
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     margin: 20px auto 10px 7.5%;
-    @mixin atMedium {
-      font-size: 20px;
-    }
   }
 
   &__shadow {
@@ -44,7 +42,7 @@
     font-size: calc(25vw - 30px);
     @mixin atMedium {
       bottom: -30px;
-      font-size: 150px;
+      font-size: 8rem;
     }
   }
 
