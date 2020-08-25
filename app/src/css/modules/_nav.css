@@ -246,7 +246,6 @@
     width: 250px;
     text-align: center;
     transition: 0.3s;
-    letter-spacing: 1px;
 
     @mixin atMedium {
       display: block;

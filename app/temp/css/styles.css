@@ -807,7 +807,6 @@ img {
     width: 250px;
     text-align: center;
     transition: 0.3s;
-    letter-spacing: 1px;
   }
 
 @media (min-width: 720px) {
@@ -993,7 +992,7 @@ img {
     display: block;
     font-size: 1.5rem;
     font-weight: 400;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-top: 50px;
   }
 
