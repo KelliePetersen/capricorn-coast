@@ -2,6 +2,11 @@
   text-align: center;
   margin: 0 auto;
 
+  &__text {
+    visibility: hidden;
+    position: absolute;
+  }
+
   &__icon {
     display: inline-block;
     position: relative;

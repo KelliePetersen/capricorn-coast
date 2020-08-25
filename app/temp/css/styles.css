@@ -379,6 +379,11 @@ img {
   margin: 0 auto;
 }
 
+.social-icons__text {
+    visibility: hidden;
+    position: absolute;
+  }
+
 .social-icons__icon {
     display: inline-block;
     position: relative;
@@ -750,6 +755,10 @@ img {
 .nav__arrow:hover {
       -webkit-transform: translateX(-50%) scale(1.25);
               transform: translateX(-50%) scale(1.25);
+    }
+
+.nav__arrow__text {
+      visibility: hidden;
     }
 
 .nav__arrow-part {

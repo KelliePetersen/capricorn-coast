@@ -188,6 +188,10 @@
     &:hover {
       transform: translateX(-50%) scale(1.25);
     }
+
+    &__text {
+      visibility: hidden;
+    }
   }
 
   &__arrow-part {
