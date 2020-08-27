@@ -13,18 +13,22 @@
     object-fit: cover;
   }
 
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
   &__heading {
     font-family: 'Dancing Script';
     font-size: 4rem;
     font-weight: 700;
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
     text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    margin: 0 0 50px;
+
     @mixin atMedium {
-      top: 15%;
       font-size: 6rem;
     }
     @mixin atLarge {
@@ -38,30 +42,41 @@
     font-size: 1.25rem;
     font-weight: 400;
     letter-spacing: 1px;
-    margin-top: 50px;
+    margin-top: 30px;
     @mixin atLarge {
       font-size: 1.5rem;
     }
   }
 
   &__link {
+    display: none;
+    margin: 0 auto;
+    text-shadow: none;
+    border-color: white;
+    background-color: white;
+    color: var(--black);
+    
+    &:hover {
+      border-color: var(--black);
+      background-color: var(--black);
+      color: white;
+    }
+
+    @mixin atMedium {
+      display: block;
+    }
+  }
+
+  &__mobile {
     display: block;
     position: absolute;
     bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
     margin: 0 auto;
-    text-shadow: none;
-    border-color: white;
-    background-color: white;
-    color: var(--black);
+
     @mixin atMedium {
-      bottom: 25%;
-    }
-    &:hover {
-      border-color: var(--black);
-      background-color: var(--black);
-      color: white;
+      display: none;
     }
   }
 }

@@ -985,23 +985,26 @@ img {
        object-fit: cover;
   }
 
+.hero__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
 .hero__heading {
     font-family: 'Dancing Script';
     font-size: 4rem;
     font-weight: 700;
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    width: 100%;
     text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    margin: 0 0 50px;
   }
 
 @media (min-width: 720px) {
 
 .hero__heading {
-      top: 15%;
       font-size: 6rem
   }
   }
@@ -1019,7 +1022,7 @@ img {
     font-size: 1.25rem;
     font-weight: 400;
     letter-spacing: 1px;
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
 @media (min-width: 1280px) {
@@ -1030,12 +1033,7 @@ img {
   }
 
 .hero__link {
-    display: block;
-    position: absolute;
-    bottom: 60px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    display: none;
     margin: 0 auto;
     text-shadow: none;
     border-color: white;
@@ -1043,18 +1041,35 @@ img {
     color: var(--black);
   }
 
-@media (min-width: 720px) {
-
-.hero__link {
-      bottom: 25%
-  }
-  }
-
 .hero__link:hover {
       border-color: var(--black);
       background-color: var(--black);
       color: white;
     }
+
+@media (min-width: 720px) {
+
+.hero__link {
+      display: block
+  }
+  }
+
+.hero__mobile {
+    display: block;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: 0 auto;
+  }
+
+@media (min-width: 720px) {
+
+.hero__mobile {
+      display: none
+  }
+  }
 
 .intro {
   text-align: center;
