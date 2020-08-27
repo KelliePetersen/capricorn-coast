@@ -493,7 +493,18 @@
   </section>
 
   <footer class="footer">
-    <img class="footer__image" src="src/img/footer.jpg" alt="A photo of a turtle swimming in the great barrier reef">
+    <img class="footer__image" 
+      srcset="src/img/footer-900.jpg 900w,
+              src/img/footer-1200.jpg 1200w, 
+              src/img/footer-1600.jpg 1600w, 
+              src/img/footer.jpg 2400w" 
+      sizes="(max-width: 899px) 900px,
+            (min-width: 900px) 1200px,
+            (min-width: 1200px) 1600px,
+            (min-width: 1600px) 2400px"
+      src="src/img/footer.jpg"
+      alt="A photo of a turtle swimming in the great barrier reef"
+    >
     <div class="footer__container">
       <p class="footer__heading text--white">NAVIGATE</p>
       <div class="footer__line"></div>
