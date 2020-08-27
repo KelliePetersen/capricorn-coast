@@ -22,6 +22,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
     @mixin atMedium {
       top: 15%;
       font-size: 6rem;
