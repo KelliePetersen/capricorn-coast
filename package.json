@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "gulp-cli": "^2.0.1",
-    "lazysizes": "^4.1.5",
+    "lazysizes": "^5.2.1",
     "normalize.css": "^8.0.1",
     "picturefill": "^3.0.3",
     "waypoints": "^4.0.1"
