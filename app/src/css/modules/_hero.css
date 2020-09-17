@@ -22,7 +22,7 @@
   }
 
   &__heading {
-    font-family: 'Dancing Script';
+    font-family: 'Dancing Script', 'Brush Script MT', 'Brush Script Std', cursive;
     font-size: 4rem;
     font-weight: 700;
     text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
